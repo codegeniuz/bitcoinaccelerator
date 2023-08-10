@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en"><head>
+		<meta charset="utf-8">
+		<title>#1 Free Bitcoin Transaction Accelerator | BitAccelerate</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://bitaccelerate.com/" rel="canonical">
+		<link href="images/favicon.png" type="image/png" rel="icon">
+		<script async src="js/matomo.js"></script><script src="js/scripts.js" async></script>
+		<script src="js/cp.js" async data-link="false"></script>
+	</head>
+	<body>
+		<header class="jumbotron jumbotron-fluid text-center">
+			<h1><a href="https://bitaccelerate.com/" rel="home"><span>Bit</span>Accelerate</a></h1>
+		</header>
+		<main class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6 flex-first flex-md-unordered">
+					<form class="input-group mb-3" onsubmit="event.preventDefault();return(accelerate(this,6299))">
+						<input type="text" name="txid" class="form-control" placeholder="TXID (Transaction ID) ..." autofocus required pattern="[a-fA-F0-9]{64}" onchange="this.value=this.value.trim()">
+						<div class="input-group-append">
+							<button class="btn btn-outline-secondary" type="submit" id="button">Accelerate</button>
+						</div>
+					</form>
+					<div id="notifications"></div>
+					<ul id="broadcasted" class="list-group"></ul>
+					<article class="mt-3 mb-4">
+<h4>Free Bitcoin Transaction Accelerator</h4>
+
+<p><b>BitAccelerate</b> is a free Bitcoin transaction accelerator that allows you to get faster confirmations on your unconfirmed transactions. Just enter the transaction ID (TXID) and click the "Accelerate" button. Our service will <b>rebroadcast the transaction</b> via 10 Bitcoin nodes.</p>
+
+<p>When more people start to use Bitcoin, the block size reaches the limit and leads to a crowded Bitcoin network. As a result, low-fee transactions are delayed, sometimes even dropped from the confirmation queue. You have to use techniques like <abbr title="Child pays for parent">CPFP</abbr> & <abbr title="Replace-by-fee">RBF</abbr> to accelerate the transaction.</p>
+
+<p>We offer an alternative solution. You can resubmit your "Stuck" transaction every 6 hours until it is confirmed. Through our service, you can periodically check the status of your transaction. No need to Sign Up or Sign In. Just make sure your tx doesn't have unconfirmed inputs.</p>
+
+<p>Unlike other similar services, we do not require payment. Nor do we collect/sell your data to third parties. We respect your privacy. Advertisements and donations allow us to keep the service free and it will always be free. So please consider donating to <b>BitAccelerate</b>!</p>
+
+<p>Use our <a href="https://bitcoinfees.net/" target="_blank">Bitcoin Fee Estimator</a> to find the optimal fee for your future transactions. This will make you less likely to use the accelerator.</p>
+<script>
+var site_url = location.href.split('#');
+if(typeof(site_url[1]) != "undefined" && /^[a-fA-F0-9]{64}$/.test(site_url[1])) {
+    document.getElementsByName('txid')[0].value = site_url[1];
+    window.addEventListener("load", (event) => {
+        accelerate(document.forms[0],6299);
+    });
+}
+</script>
+					</article>
+				</div>
+			</div>
+		</main>
+		<footer class="jumbotron jumbotron-fluid text-center mb-0 pt-0 pb-1">
+			<div class="container pt-3 mb-3">
+				<div class="row justify-content-center">
+					<div class="col-lg-6 flex-first flex-md-unordered">
+						<h6>Other Useful Services:</h6>
+						<ul class="list-group mt-3 mb-2">
+							<li class="list-group-item"><a href="https://bitaccelerate.com/pushtx/">Broadcast Raw Transaction / PushTX</a></li>
+							<li class="list-group-item"><a href="https://bitcoinfees.net/" target="_blank">Bitcoin Fee Calculator / Estimator</a> (bitcoinfees.net)</li>
+							<li class="list-group-item"><a href="https://bitref.com/" target="_blank">Check Bitcoin Address Balance</a> - (bitref.com)</li>
+							<li class="list-group-item"><a href="https://peername.com/" target="_blank">Blockchain-Based Domain Names</a> (peername.com)</li>
+							<li class="list-group-item"><a href="https://1bitcoinprice.com/" target="_blank">1 Bitcoin to USD Calculator & Chart</a> (1bitcoinprice.com)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<hr class="mt-0">
+			<p>❤️ Donate Bitcoin: 3EfRcRVscaxfRQndCYBgAYrGR9TqCrPjen</p>
+		</footer>
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.cloxy.net/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '21']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//stats.cloxy.net/matomo.php?idsite=21&amp;rec=1" style="border:0;" alt></p></noscript>
+<!-- End Matomo Code -->
+
+	
+
+
+</body></html>
